@@ -5,11 +5,21 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 @Component({
   selector: 'hello-world',
-  template: `<div><h1>Hello World</h1></div>`
+  template: `<div><h1>Hello {{ name }} </h1></div>
+  <div>
+    <ul>
+      <li *ngFor="let name of names">Hello {{ name }}</li>
+    </ul>
+  </div>
+  `
 })
 
 class HelloWorld{
+  name: string[];
 
+  constructor(){
+    this.name = ['María', 'Ari', 'Carlos', 'Felipe', 'Nate'];
+  }
 }
 
 @NgModule({
