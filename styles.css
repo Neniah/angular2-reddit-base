@@ -44,3 +44,8 @@ ul.ui.list li:before {
   clear: both;
   width: 100%;
 }
+
+.container{
+  width: 80%;
+  margin:8%;
+}
