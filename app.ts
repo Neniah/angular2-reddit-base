@@ -63,7 +63,7 @@ class ArticleComponente{
   }
 
   voteDown(){
-    
+    this.votes -= 1;
   }
 }
 @NgModule({
